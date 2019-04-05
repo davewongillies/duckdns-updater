@@ -12,7 +12,6 @@ import (
 )
 
 func main() {
-	// Comma separated list of duckdns subdomains
 	subdomain := os.Getenv("DUCKDNS_SUBDOMAIN")
 	token := os.Getenv("DUCKDNS_TOKEN")
 	interval, _ := strconv.Atoi(getEnv("DUCKDNS_REFRESH_INTERVAL", "0"))
