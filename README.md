@@ -1,6 +1,6 @@
 # duckdns-updater
 
-[![Docker Hub Build Status](https://img.shields.io/docker/build/davewongillies/duckdns-updater.svg)](https://hub.docker.com/r/davewongillies/duckdns-updater/builds/) ![Docker Hub Build Automated](https://img.shields.io/docker/automated/davewongillies/duckdns-updater.svg) [![Docker Hub Pulls](https://img.shields.io/docker/pulls/davewongillies/duckdns-updater.svg)](https://hub.docker.com/r/davewongillies/duckdns-updater/)
+[![Docker Hub Pulls](https://img.shields.io/docker/pulls/davewongillies/duckdns-updater.svg)](https://hub.docker.com/r/davewongillies/duckdns-updater/)
 
 A simple [Duck DNS](http://www.duckdns.org) update client
 
@@ -34,7 +34,7 @@ Or `docker-compose`:
 
 ```yaml
 ---
-version: "2"
+version: '3'
 services:
   duckdns:
     image: davewongillies/duckdns-updater
@@ -44,12 +44,11 @@ services:
       - DUCKDNS_TOKEN=<your_token>
       - DUCKDNS_SUBDOMAIN=example
     restart: unless-stopped
-
 ```
 
 ## Variables
 
-`duckdns` takes the following environment variables:
+`duckdns-updater` takes the following environment variables:
 
 |Environment Variable|Description|Example|
 |--------------------|-----------|-------|
