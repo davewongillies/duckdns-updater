@@ -1,0 +1,11 @@
+---
+version: "2"
+services:
+  duckdns:
+    image: davewongillies/duckdns-updater
+    container_name: duckdns
+    environment:
+      - DUCKDNS_REFRESH_INTERVAL=3600
+      - DUCKDNS_TOKEN=<YOUR_TOKEN_HERE>
+      - DUCKDNS_SUBDOMAIN=<YOUR_SUBDOMAIN_HERE>
+    restart: unless-stopped
